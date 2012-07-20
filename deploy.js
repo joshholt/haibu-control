@@ -27,7 +27,7 @@ client = new haibu.drone.Client({
 	port: 9002
 });
 
-app = require('fs').readFileSync(require('path').join(process.cwd(), '/Deployfile'));
+app = require('fs').readFileSync(process.cwd() + '/Deployfile'));
 
 deployer = {
 	"start"   : function () {
