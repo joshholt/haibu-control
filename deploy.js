@@ -5,22 +5,25 @@ var eyes = require('eyes'),
 		optimist = require('optimist'),
 		argv  = optimist.usage('Usage: $0 -[skrd]')
 			.describe({
+				'h' : 'The address to the haibu server to which you will be deploying an application'
 				's' : 'Start application on Haibu Server, will deploy and start if this is the first time the server has seen the app',
 				'k' : 'Stop  application on Habiu Server',
 				'r' : 'Restart application on Habiu Server',
 				'd' : 'Remove all instances of application from the Haibu Server'
 			})
+			.options('h', {	alias: 'host' })
 			.options('s', {	alias: 'start' })
 			.options('k', { alias: 'kill' })
 			.options('r', { alias: 'restart' })
 			.options('d', { alias: 'destroy' })
+			.demand('h')
 			.argv;
 
 
 var client, app, deployer;
 
 client = new haibu.drone.Client({
-	host: '127.0.0.1',
+	host: argv.h,
 	port: 9002
 });
 
