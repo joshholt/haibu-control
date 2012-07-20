@@ -6,7 +6,7 @@ You install haibu-control globally via NPM and then you create a
 
 The format of the "Deployfile" is as follows
 
-   {
+		{
 			"user" : "joshholt",
 			"name" : "test",
 			"domain": "mytest.com",
@@ -17,7 +17,7 @@ The format of the "Deployfile" is as follows
 			"scripts" : {
 				"start" : "server.js"
 			}
-	 }
+		}
 
 
 Once you've set up your "Deployfile" you can deploy your application to
