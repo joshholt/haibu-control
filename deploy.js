@@ -27,9 +27,9 @@ client = new haibu.drone.Client({
 	port: 9002
 });
 
-try
+try {
 	app = JSON.parse(require('fs').readFileSync(process.cwd() + '/Deployfile'));
-catch (e) {
+} catch (e) {
 	optimist.showHelp()
 	console.log("Your Deployfile must be valid JSON");
 	process.exit();
