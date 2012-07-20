@@ -23,16 +23,16 @@ The format of the "Deployfile" is as follows
 Once you've set up your "Deployfile" you can deploy your application to
 your haibu server with the folowing command:
 
-`haibu-control -h=127.0.0.1 -s`
+`haibu-control --host=127.0.0.1 -s`
 
 You can restart your application on the haibu server with the following comand:
 
-`haibu-control -h=127.0.0.1 -r`
+`haibu-control --host=127.0.0.1 -r`
 
 You can kill your application on the haibu server with the following comand:
 
-`haibu-control -h=127.0.0.1 -k`
+`haibu-control --host=127.0.0.1 -k`
 
 You can completely remove your application from the haibu server with the following comand:
 
-`haibu-control -h=127.0.0.1 -d`
+`haibu-control --host=127.0.0.1 -d`
