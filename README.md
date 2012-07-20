@@ -36,3 +36,10 @@ You can kill your application on the haibu server with the following comand:
 You can completely remove your application from the haibu server with the following comand:
 
 `haibu-control --host=127.0.0.1 -d`
+
+
+###Example
+
+There is an example application that you can use to test out haibu-control [here][examplelink]
+
+[examplelink]:https://github.com/joshholt/haibu-control-example
