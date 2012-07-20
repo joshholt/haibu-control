@@ -2,7 +2,7 @@
   "author": "Josh Holt <holt.josh@gmail.com> (http://joshholt.github.com)",
   "name": "haibu-control",
   "description": "A simple Haibu deployer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "dependencies": {
 		"haibu":"*",
 		"eyes":"*",
