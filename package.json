@@ -1,0 +1,23 @@
+{
+  "author": "Josh Holt <holt.josh@gmail.com> (http://joshholt.github.com)",
+  "name": "haibu-test",
+  "description": "A simple Haibu deployer",
+  "version": "0.0.1",
+  "dependencies": {
+		"haibu":"*",
+		"eyes":"*",
+		"optimist": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "bin" : {
+    "haibu-control" : "./deployer.js"
+  },
+  "repository" : {
+    "type" : "git",
+    "url"  : "https://github.com/joshholt/haibu-control"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
