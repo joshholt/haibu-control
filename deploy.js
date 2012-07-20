@@ -22,12 +22,14 @@ var eyes = require('eyes'),
 var client, app, deployer;
 
 client = new haibu.drone.Client({
-	host: argv.h,
+	host: argv.host,
 	port: 9002
 });
 
 try {
 	app = JSON.parse(require('fs').readFileSync(process.cwd() + '/Deployfile'));
+	console.log("Processed your Deployfile: \n");
+	eyes.inspect(app);
 } catch (e) {
 	optimist.showHelp()
 	console.log("Your Deployfile must be valid JSON");
