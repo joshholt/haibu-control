@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var eyes = require('eyes'),
-		haibu = require('haibu'),
+		haibu = require('haibu-api'),
 		optimist = require('optimist'),
 		argv  = optimist.usage('Usage: $0 -[skrd]')
 			.describe({
@@ -21,10 +21,10 @@ var eyes = require('eyes'),
 
 var client, app, deployer;
 
-client = new haibu.drone.Client({
+client = new haibu.createClient({
 	host: argv.host,
 	port: 9002
-});
+}).drone;
 
 try {
 	app = JSON.parse(require('fs').readFileSync(process.cwd() + '/Deployfile'));
