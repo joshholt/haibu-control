@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/joshholt/haibu-control.png)](http://travis-ci.org/joshholt/haibu-control)
 ###Haibu-Control
 haibu-control is a remote control for a haibu server.
 
